@@ -1,37 +1,26 @@
+from itertools import combinations
 def solution(orders, course):
     answer = []
     dict = {}
     for order in orders:
-        for menu in order:
-            if not menu in dict:
-                dict[menu] = 1
-            else:
-                dict[menu] +=1
-
-    dict = list(zip(dict.keys(), dict.values()))
-    # dict.sort(key=lambda  x:x[1])
+        for c in course:
+            for set in list(combinations(sorted(order), c)):
+                if not set in dict:
+                    dict[set] = 1
+                else:
+                    dict[set] += 1
     print(dict)
-
-
-    cnt = {}
-    for d in dict:
-        if not d[1] in cnt:
-            cnt[d[1]] = [d[0]]
-        else:
-            cnt[d[1]].append(d[0])
-    print(cnt)
-
-    keys = cnt.keys()
-    print(keys)
-    setmenu = []
     for c in course:
-        for k in keys:
-            if k >= 2:
-                setmenu += cnt[k]
-        print(setmenu)
-    return answer
+        mem = [ [dict[key], key] for key in dict if len(key) == c and dict[key] > 1]
+        if not mem:
+            continue
+        else:
+            max_set = max(mem)
+            answer += [''.join(m[1]) for m in mem if m[0] == max_set[0]]
+
+    return sorted(answer)
 
 
-orders = ["ABCFG", "AC", "CDE", "ACDE", "BCFG", "ACDEH"]
+orders = ["XYZ", "XWY", "WXA"]
 course = [2,3,4]
 print(solution(orders, course))
