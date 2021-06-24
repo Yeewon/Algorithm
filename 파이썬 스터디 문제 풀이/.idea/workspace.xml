@@ -32,14 +32,59 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="게임아이템.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="게임아이템.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/힙/게임아이템.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="128">
-              <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+              <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="나머지 한 점.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/해시/나머지 한 점.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="운송 트럭.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/해시/운송 트럭.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="스킬트리2.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/해시/스킬트리2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="빙고.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/해시/빙고.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="방문길ㅇ.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/해시/방문길ㅇ.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -61,12 +106,17 @@
         <option value="$PROJECT_DIR$/힙/더 맵게.py" />
         <option value="$PROJECT_DIR$/힙/우선 순위대로 처리하기.py" />
         <option value="$PROJECT_DIR$/힙/게임아이템.py" />
+        <option value="$PROJECT_DIR$/해시/나머지 한 점.py" />
+        <option value="$PROJECT_DIR$/해시/운송 트럭.py" />
+        <option value="$PROJECT_DIR$/해시/스킬트리2.py" />
+        <option value="$PROJECT_DIR$/해시/빙고.py" />
+        <option value="$PROJECT_DIR$/해시/방문길ㅇ.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="540" />
-    <option name="y" value="147" />
+    <option name="x" value="531" />
+    <option name="y" value="123" />
     <option name="width" value="1189" />
     <option name="height" value="803" />
   </component>
@@ -87,6 +137,11 @@
               <item name="파이썬 스터디 문제 풀이" type="b2602c69:ProjectViewProjectNode" />
               <item name="파이썬 스터디 문제 풀이" type="462c0819:PsiDirectoryNode" />
               <item name="큐" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="파이썬 스터디 문제 풀이" type="b2602c69:ProjectViewProjectNode" />
+              <item name="파이썬 스터디 문제 풀이" type="462c0819:PsiDirectoryNode" />
+              <item name="해시" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="파이썬 스터디 문제 풀이" type="b2602c69:ProjectViewProjectNode" />
@@ -129,7 +184,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="653" y="78" width="951" height="642" extended-state="0" />
+    <frame x="425" y="99" width="951" height="642" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22647703" />
@@ -189,10 +244,45 @@
     <entry file="file://$PROJECT_DIR$/힙/게임아이템.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
-          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/해시/나머지 한 점.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/해시/운송 트럭.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/해시/스킬트리2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/해시/빙고.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/해시/방문길ㅇ.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
         </state>
       </provider>
     </entry>
