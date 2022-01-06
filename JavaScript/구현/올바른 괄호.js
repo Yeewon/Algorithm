@@ -1,14 +1,14 @@
 function solution(s) {
-  const stack = [];
-  // s를 모두 돈다.
+  let count = 0;
   for (const c of s) {
-    if (x === "(") {
+    if (c === "(") {
       count += 1;
     } else {
+      if (count === 0) {
+        return false;
+      }
       count -= 1;
     }
   }
-  return count;
+  return !count;
 }
-
-solution("(())");
