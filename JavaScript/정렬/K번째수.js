@@ -1,3 +1,5 @@
+// https://programmers.co.kr/learn/courses/30/lessons/42748
+
 function solution(array, commands) {
   var answer = [];
   commands.map((command) => {
