@@ -7,10 +7,17 @@ data.sort((a, b) => b - a);
 const first = data[0];
 const second = data[1];
 
-let answer = first;
+// 수열 사용
+// 가장 큰 수가 더해지는 횟수 계산
+const firstCount = parseInt(m / (k + 1)) * k;
+firstCount += m % (k + 1);
 
-for (let i = 1; i < m; i++) {
-  answer += i % k ? first : second;
-}
+const answer = firstCount * first + (m - firstCount) * second;
+
+// let answer = first;
+
+// for (let i = 1; i < m; i++) {
+//   answer += i % k ? first : second;
+// }
 
 console.log(answer);
