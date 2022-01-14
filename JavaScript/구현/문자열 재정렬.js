@@ -9,6 +9,6 @@ for (const char of s) {
 }
 
 let sortedAlpha = alpha.split("").sort().join("");
-sortedAlpha += String(number);
+number && (sortedAlpha += String(number));
 
 console.log(sortedAlpha);
