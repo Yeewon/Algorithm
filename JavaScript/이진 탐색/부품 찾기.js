@@ -23,6 +23,7 @@ const requestNumbers = [5, 7, 9];
 
 const answer = [];
 
+// 이진탐색 이용
 partNumbers.sort((a, b) => a - b);
 for (const requestNumber of requestNumbers) {
   const result = binary_search(
@@ -32,6 +33,12 @@ for (const requestNumber of requestNumbers) {
     partNumbers.length - 1
   );
   answer.push(result === -1 ? "no" : "yes");
+}
+
+// set 이용
+const partNumberSet = new Set(partNumbers);
+for (const requestNumber of requestNumbers) {
+  answer.push(partNumberSet.has(requestNumber) ? "yes" : "no");
 }
 
 console.log(answer);
