@@ -3,7 +3,7 @@ const solution = () => {
   const m = 15;
   const array = [2, 3];
 
-  // 다이나믹 프로그래밍
+  // 다이나믹 프로그래밍(Dynamic Programming) 진행(보텀업)
   const d = Array.from({ length: m + 1 }, () => 10001);
   d[0] = 0;
 
