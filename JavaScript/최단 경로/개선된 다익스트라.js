@@ -6,32 +6,31 @@ class MinHeap {
     this.size = this.heap.length;
   }
 
-  insert(value) {
+  push(value) {
     this.heap.push(value);
     this.size++;
     this.moveUp();
   }
 
-  // [cost, index]
   pop() {
     if (this.size === 0) return;
     if (this.size === 1) {
       this.size--;
       return this.heap.pop();
     }
-    const min = this.heap[0];
+    const minValue = this.heap[0];
 
     this.heap[0] = this.heap.pop();
     this.size--;
     this.moveDown(0);
 
-    return min;
+    return minValue;
   }
 
   // 힙의 하단에서 부터 상단으로 값을 변경한다.
   moveUp() {
     // 힙의 맨 마지막 요소에 값이 추가 되었으므로
-    let curIdx = this.heap.length - 1;
+    let curIdx = this.size - 1;
 
     // 최솟값을 가장 최상단으로 올리는 작업을 반복
     while (curIdx > 0) {
@@ -102,7 +101,7 @@ input.forEach(([a, b, c]) => {
 
 const dijkstra = (start) => {
   const heap = new MinHeap();
-  heap.insert([0, start]);
+  heap.push([0, start]);
   distance[start] = 0;
 
   while (heap.size) {
@@ -114,7 +113,7 @@ const dijkstra = (start) => {
       const cost = now_dist + dest_dist;
       if (distance[dest] > cost) {
         distance[dest] = cost;
-        heap.insert([cost, dest]);
+        heap.push([cost, dest]);
       }
     });
   }
