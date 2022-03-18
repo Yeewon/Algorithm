@@ -27,7 +27,7 @@ const dx = [-1, 1, 0, 0];
 const dy = [0, 0, -1, 1];
 
 // dfs를 이용해 각 바이러스가 사방으로 퍼지도록 하기
-const virus = (x, y) => {
+const virus_dfs = (x, y) => {
   for (let i = 0; i < 4; i++) {
     const nx = x + dx[i];
     const ny = y + dy[i];
@@ -39,6 +39,26 @@ const virus = (x, y) => {
         temp[nx][ny] = 2;
         // 재귀적으로 수행
         virus(nx, ny);
+      }
+    }
+  }
+};
+
+// bfs를 이용해 각 바이러스가 사방으로 퍼지도록 하기
+const virus_bfs = (x, y) => {
+  const queue = [[x, y]];
+
+  while (queue.length) {
+    const [x, y] = queue.shift();
+
+    for (let i = 0; i < 4; i++) {
+      const nx = x + dx[i];
+      const ny = y + dy[i];
+
+      if (nx < 0 || nx >= n || ny < 0 || ny >= m) continue;
+      if (temp[nx][ny] === 0) {
+        temp[nx][ny] = 2;
+        queue.push([nx, ny]);
       }
     }
   }
@@ -70,7 +90,7 @@ const dfs = (count) => {
     for (let i = 0; i < n; i++) {
       for (let j = 0; j < m; j++) {
         if (temp[i][j] === 2) {
-          virus(i, j);
+          virus_dfs(i, j);
         }
       }
     }
